@@ -1,7 +1,7 @@
 {
   "version": "1.1.1",
   "latest_version": "1.1.1",
-  "changelog": "Fixed Deepgram Nova transcription save_txt error and OTA update compatibility.",
-  "release_notes": "Fixed Deepgram Nova transcription save_txt error and OTA update compatibility.",
+  "changelog": "Fixed Deepgram Nova transcription save_txt and live OTA hotpatch engine.",
+  "release_notes": "Fixed Deepgram Nova transcription save_txt and live OTA hotpatch engine.",
   "download_url": "https://raw.githubusercontent.com/deemoon607-boop/ns-clipper-releases/main/patch_v1.1.0.zip"
 }
