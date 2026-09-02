@@ -1,7 +1,7 @@
 {
-  "version": "1.1.1",
-  "latest_version": "1.1.1",
-  "changelog": "Fixed Deepgram Nova transcription save_txt and OTA update compatibility.",
-  "release_notes": "Fixed Deepgram Nova transcription save_txt and OTA update compatibility.",
-  "download_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.1/patch_v1.1.0.zip"
+  "version": "1.1.2",
+  "latest_version": "1.1.2",
+  "changelog": "Safe UAC auto-updater, pre-update backup & rollback, Deepgram Nova fixes, and AppData config persistence.",
+  "release_notes": "Safe UAC auto-updater, pre-update backup & rollback, Deepgram Nova fixes, and AppData config persistence.",
+  "download_url": "https://raw.githubusercontent.com/deemoon607-boop/ns-clipper-releases/main/patch_v1.1.2.zip"
 }
