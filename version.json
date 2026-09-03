@@ -1,5 +1,12 @@
 {
-  "version": "1.1.4",
-  "installer_filename": "NS_Clipper_Setup.exe",
-  "installer_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.4/NS_Clipper_Setup.exe"
+  "version": "1.1.5",
+  "latest_version": "1.1.5",
+  "title": "NS Clipper v1.1.5 — Production Update",
+  "changelog": "• Automatic AI Title generation for viral clips across Find Viral Clips, Editor, and Export\n• Strict subtitle/caption isolation: dialogue subtitles remain 100% transcript-driven\n• Instant person-to-person character hard-cut switching for Simple Face Tracking\n• Center split feathering/blending with smooth cosine S-curve transition\n• Windows-safe human-readable default export filenames with spaces\n• Automated full-installer OTA upgrade pipeline and stability enhancements",
+  "release_notes": "• Automatic AI Title generation for viral clips across Find Viral Clips, Editor, and Export\n• Strict subtitle/caption isolation: dialogue subtitles remain 100% transcript-driven\n• Instant person-to-person character hard-cut switching for Simple Face Tracking\n• Center split feathering/blending with smooth cosine S-curve transition\n• Windows-safe human-readable default export filenames with spaces\n• Automated full-installer OTA upgrade pipeline and stability enhancements",
+  "installer_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.5/NS_Clipper_Setup_v1.1.5.exe",
+  "installer_filename": "NS_Clipper_Setup_v1.1.5.exe",
+  "installer_size_bytes": 290041548,
+  "installer_sha256": "3e7c7373445f7d0dcbd95eb890a920cc7d2b4fae0bfc1b6dca8038e5167c8781",
+  "mandatory": false
 }
