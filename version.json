@@ -1,9 +1,9 @@
 {
   "version": "1.1.6",
   "latest_version": "1.1.6",
-  "title": "NS Clipper v1.1.6 — Production Release",
-  "changelog": "• Multi-Person Group Mode with RetinaFace + MediaPipe dual-tracking (98-99% accuracy)\n• Complete elimination of duplicate faces across shot cuts and dark studio backgrounds\n• Enhanced scene-cut detection (HSV histogram + grayscale difference > 20.0)\n• Autonomous Project Session Isolation (independent project folders, zero clip bleed)\n• Meaningful AI fallback titles and detailed error logging (HTTP 429, timestamps)\n• Zero-config offline deployment with bundled MediaPipe, RetinaFace, and YuNet weights",
-  "release_notes": "• Multi-Person Group Mode with RetinaFace + MediaPipe dual-tracking (98-99% accuracy)\n• Complete elimination of duplicate faces across shot cuts and dark studio backgrounds\n• Enhanced scene-cut detection (HSV histogram + grayscale difference > 20.0)\n• Autonomous Project Session Isolation (independent project folders, zero clip bleed)\n• Meaningful AI fallback titles and detailed error logging (HTTP 429, timestamps)\n• Zero-config offline deployment with bundled MediaPipe, RetinaFace, and YuNet weights",
+  "title": "NSClipper v1.1.6 - Production Release",
+  "release_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/tag/v1.1.6",
+  "download_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.6/NSClipper_v1.1.6_Setup.exe",
   "installer_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.6/NSClipper_v1.1.6_Setup.exe",
   "installer_filename": "NSClipper_v1.1.6_Setup.exe",
   "installer_size_bytes": 290129909,
@@ -12,5 +12,7 @@
   "patch_filename": "NSClipper_v1.1.6_PATCH.zip",
   "patch_size_bytes": 6016960,
   "patch_sha256": "4c13f696724fcc68b536718a71b6490f2a5bff165d5d090518d7530ce61d0b1e",
+  "release_notes": "Multi-Person Group Mode, Project-based workflow, Bug fixes",
+  "changelog": "Multi-Person Group Mode, Project-based workflow, Bug fixes",
   "mandatory": false
 }
