@@ -1,18 +1,35 @@
 {
-  "version": "1.1.8",
-  "latest_version": "1.1.8",
-  "title": "NS Clipper v1.1.8",
-  "release_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/tag/v1.1.8",
-  "download_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.8/NSClipper_v1.1.8_Setup.exe",
-  "installer_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.8/NSClipper_v1.1.8_Setup.exe",
-  "installer_filename": "NSClipper_v1.1.8_Setup.exe",
-  "installer_size_bytes": 316808489,
-  "installer_sha256": "b301a9662edb4a5b1740b716a519c06f36af8cdd3377329ea223b4bb320786d3",
-  "patch_url": "",
-  "patch_filename": "",
-  "patch_size_bytes": 0,
-  "patch_sha256": "",
-  "release_notes": "NS Clipper v1.1.8: Stability fixes for PyAV scrub-preview crash; context-aware Auto Subject Tracking for cooking/product videos; static avatar/logo rejection; faster AV1 action-trajectory scanning. Supersedes v1.1.7.",
-  "changelog": "## Stability\n- Fixed a critical Qt/PyAV scrub-preview crash when decoding portrait or padded video frames.\n- Added safe QImage buffer conversion for non-contiguous PyAV frames.\n- Improved project switching and scrub-worker safety.\n\n## Auto Subject Tracking\n- Added context-aware tracking for cooking, product, and hands-only videos.\n- Added action-area framing for portrait crops.\n- Automatically rejects static corner avatars, logos, and watermark graphics.\n- Ensured playback preview, timeline scrubbing, and export use the same crop trajectory.\n\n## Performance\n- Faster AV1 action-trajectory scanning via bundled FFmpeg with safe OpenCV fallback.\n- Improved trajectory reuse during application session.\n- Preserved NVENC, Intel QSV, AMD AMF, and CPU export fallback behavior.\n\n## Compatibility\n- Existing v1.1.5, v1.1.6, and v1.1.7 installations update through the full installer.\n- Patch archives remain internal.",
-  "mandatory": false
+  "version": "1.1.9",
+  "latest_version": "1.1.9",
+  "title": "NS Clipper v1.1.9",
+  "release_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/tag/v1.1.9",
+  "download_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_Setup.exe",
+  "installer_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_Setup.exe",
+  "installer_filename": "NSClipper_v1.1.9_Setup.exe",
+  "installer_size_bytes": 316884729,
+  "installer_sha256": "2a44f6fea4e50ea9cd7065edb380311909cd8e652777e74e63b07fb1f841bc93",
+  "patch_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_PATCH.zip",
+  "patch_filename": "NSClipper_v1.1.9_PATCH.zip",
+  "patch_size_bytes": 46280,
+  "patch_sha256": "a6eb9bbc800be063f08af8ea5216a08f1b371401503010ce49545eef59d45590",
+  "patch": {
+    "supported_base_versions": [
+      "1.1.8"
+    ],
+    "filename": "NSClipper_v1.1.9_PATCH.zip",
+    "url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_PATCH.zip",
+    "size": 46280,
+    "sha256": "a6eb9bbc800be063f08af8ea5216a08f1b371401503010ce49545eef59d45590",
+    "require_base_hash_check": true
+  },
+  "ota_routing": {
+    "v1.1.9": "no_update",
+    "v1.1.8": "patch_then_installer_fallback",
+    "v1.1.7": "full_installer",
+    "default": "full_installer"
+  },
+  "release_notes": "NS Clipper v1.1.9: Gemini Interactions API with x-goog-api-key header; Deepgram nova-3 pinned; centralized model registry; Find Viral Clips Gemini 3.6 Flash only; deprecated models removed. v1.1.8 patch available.",
+  "changelog": "## AI Provider Fixes\n- Gemini Interactions API with x-goog-api-key header; API keys never in URL query params.\n- Audio size routing: <=15 MB inline, >15 MB Files API.\n- Deepgram pinned nova-3; strict HTTP error classification.\n- Key rotation only on 401/403.\n\n## Model Registry\n- model_registry.py centralises all AI model definitions.\n- Find Viral Clips: Gemini 3.6 Flash (Recommended) only.\n- Deprecated Gemini 2.x/1.x removed.\n- Auto-migration of stale saved scoring model.\n\n## Compatibility\n- v1.1.8 patch available.\n- v1.1.7 and earlier: full installer required.",
+  "mandatory": false,
+  "_note": "v1.1.8 receives patch if base hashes validate; v1.1.7 and earlier always receive full installer; unknown/modified installations always receive full installer."
 }
