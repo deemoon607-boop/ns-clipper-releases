@@ -1,35 +1,36 @@
 {
-  "version": "1.1.9",
-  "latest_version": "1.1.9",
-  "title": "NS Clipper v1.1.9",
-  "release_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/tag/v1.1.9",
-  "download_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_Setup.exe",
-  "installer_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_Setup.exe",
-  "installer_filename": "NSClipper_v1.1.9_Setup.exe",
-  "installer_size_bytes": 316884729,
-  "installer_sha256": "2a44f6fea4e50ea9cd7065edb380311909cd8e652777e74e63b07fb1f841bc93",
-  "patch_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_PATCH.zip",
-  "patch_filename": "NSClipper_v1.1.9_PATCH.zip",
-  "patch_size_bytes": 46280,
-  "patch_sha256": "a6eb9bbc800be063f08af8ea5216a08f1b371401503010ce49545eef59d45590",
+  "version": "1.1.10",
+  "latest_version": "1.1.10",
+  "title": "NS Clipper v1.1.10",
+  "release_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/tag/v1.1.10",
+  "download_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.10/NSClipper_v1.1.10_Setup.exe",
+  "installer_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.10/NSClipper_v1.1.10_Setup.exe",
+  "installer_filename": "NSClipper_v1.1.10_Setup.exe",
+  "installer_size_bytes": 316789453,
+  "installer_sha256": "c31c6513d7a7047ab5480289ec431e259d6d4149147a14111298e1815b42a927",
+  "patch_url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.10/NSClipper_v1.1.10_PATCH.zip",
+  "patch_filename": "NSClipper_v1.1.10_PATCH.zip",
+  "patch_size_bytes": 138884,
+  "patch_sha256": "872f116bc59bc357de4450156b903085bf87c72ebda468521a028abc90953b0d",
   "patch": {
     "supported_base_versions": [
-      "1.1.8"
+      "1.1.9"
     ],
-    "filename": "NSClipper_v1.1.9_PATCH.zip",
-    "url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.9/NSClipper_v1.1.9_PATCH.zip",
-    "size": 46280,
-    "sha256": "a6eb9bbc800be063f08af8ea5216a08f1b371401503010ce49545eef59d45590",
+    "filename": "NSClipper_v1.1.10_PATCH.zip",
+    "url": "https://github.com/deemoon607-boop/ns-clipper-releases/releases/download/v1.1.10/NSClipper_v1.1.10_PATCH.zip",
+    "size": 138884,
+    "sha256": "872f116bc59bc357de4450156b903085bf87c72ebda468521a028abc90953b0d",
     "require_base_hash_check": true
   },
   "ota_routing": {
-    "v1.1.9": "no_update",
-    "v1.1.8": "patch_then_installer_fallback",
+    "v1.1.10": "no_update",
+    "v1.1.9": "patch_then_installer_fallback",
+    "v1.1.8": "full_installer",
     "v1.1.7": "full_installer",
     "default": "full_installer"
   },
-  "release_notes": "NS Clipper v1.1.9: Gemini Interactions API with x-goog-api-key header; Deepgram nova-3 pinned; centralized model registry; Find Viral Clips Gemini 3.6 Flash only; deprecated models removed. v1.1.8 patch available.",
-  "changelog": "## AI Provider Fixes\n- Gemini Interactions API with x-goog-api-key header; API keys never in URL query params.\n- Audio size routing: <=15 MB inline, >15 MB Files API.\n- Deepgram pinned nova-3; strict HTTP error classification.\n- Key rotation only on 401/403.\n\n## Model Registry\n- model_registry.py centralises all AI model definitions.\n- Find Viral Clips: Gemini 3.6 Flash (Recommended) only.\n- Deprecated Gemini 2.x/1.x removed.\n- Auto-migration of stale saved scoring model.\n\n## Compatibility\n- v1.1.8 patch available.\n- v1.1.7 and earlier: full installer required.",
+  "release_notes": "NS Clipper v1.1.10: Gemini Interactions API schema fix, Deepgram isolation, Nova-3 pinning, 300s timeout, duplicate Qt signal guard, model registry alignment.",
+  "changelog": "# NS Clipper v1.1.10\n\n## Critical AI Provider Fixes\n- Gemini Interactions API Schema: Migrated to root input parameter, snake_case generation_config, and audio items type audio.\n- Gemini 400 Payload Error Fast-Fail: Zero key rotations on schema errors, single Files API upload, and remote audio cleanup in finally.\n- Gemini 404 Route: Auto-fallback to gemini-3.6-flash without invalid key rotation.\n- Deepgram Nova-3 Isolation: Isolated raw binary audio requests (/v1/listen), zero Gemini JSON payload pollution, and typed error classifications.\n- Large Audio Timeout: Deepgram timeout set to 300s to handle 24.53 MB audio files.\n\n## UI & Engine Fixes\n- Duplicate Qt Signal Guard: Prevents duplicate progress bar updates and concurrent worker leaks.\n- Update Dialog Formatting: Correctly formats patch download sizes (e.g. 135.6 KB instead of 0.0 MB).\n- Central Model Registry: Find Viral Clips uses Gemini 3.6 Flash, Transcribe uses Gemini 3.5 Transcribe, Deepgram uses Nova-3.\n\n## Upgrade & Compatibility Policy\n- v1.1.9 users receive atomic patch (135.6 KB).\n- v1.1.8 and earlier: full installer required.\n- Preserved: All settings, licenses, project workspaces, and API keys remain 100% untouched.\n",
   "mandatory": false,
-  "_note": "v1.1.8 receives patch if base hashes validate; v1.1.7 and earlier always receive full installer; unknown/modified installations always receive full installer."
+  "_note": "v1.1.9 receives patch if base hashes validate; v1.1.8 and earlier always receive full installer; unknown/modified installations always receive full installer."
 }
